@@ -13,6 +13,8 @@ type Props = {
   }
 }
 
+export const runtime = 'edge';
+
 export async function generateStaticParams() {
   const product_categories = await listCategories()
 

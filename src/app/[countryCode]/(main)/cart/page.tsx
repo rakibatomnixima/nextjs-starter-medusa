@@ -9,6 +9,8 @@ import { getCheckoutStep } from "@lib/util/get-checkout-step"
 import { CartWithCheckoutStep } from "types/global"
 import { getCart, getCustomer } from "@lib/data"
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: "Cart",
   description: "View your cart",

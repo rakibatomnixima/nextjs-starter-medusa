@@ -17,6 +17,7 @@ type Props = {
   params: { countryCode: string; handle: string }
 }
 
+
 export async function generateStaticParams() {
   const countryCodes = await listRegions().then((regions) =>
     regions?.map((r) => r.countries.map((c) => c.iso_2)).flat()

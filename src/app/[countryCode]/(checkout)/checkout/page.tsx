@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   title: "Checkout",
 }
 
+export const runtime = 'edge';
+
 const fetchCart = async () => {
   const cartId = cookies().get("_medusa_cart_id")?.value
 

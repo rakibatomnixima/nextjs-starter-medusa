@@ -4,6 +4,8 @@ import OrderOverview from "@modules/account/components/order-overview"
 import { listCustomerOrders } from "@lib/data"
 import { notFound } from "next/navigation"
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: "Orders",
   description: "Overview of your previous orders.",

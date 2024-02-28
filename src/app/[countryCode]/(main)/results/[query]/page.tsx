@@ -18,6 +18,8 @@ type Params = {
   }
 }
 
+export const runtime = 'edge';
+
 export default async function SearchResults({ params, searchParams }: Params) {
   const { query } = params
   const { sortBy, page } = searchParams

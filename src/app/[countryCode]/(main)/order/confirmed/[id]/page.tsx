@@ -10,6 +10,8 @@ type Props = {
   params: { id: string }
 }
 
+export const runtime = 'edge';
+
 async function getOrder(id: string) {
   const order = await retrieveOrder(id)
 

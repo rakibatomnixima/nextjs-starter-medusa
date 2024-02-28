@@ -9,6 +9,8 @@ import ProfilePassword from "@modules/account/components/profile-password"
 import { getCustomer, listRegions } from "@lib/data"
 import { notFound } from "next/navigation"
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: "Profile",
   description: "View and edit your Medusa Store profile.",

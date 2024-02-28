@@ -17,6 +17,8 @@ type Props = {
   }
 }
 
+export const runtime = 'edge';
+
 export const PRODUCT_LIMIT = 12
 
 export async function generateStaticParams() {
